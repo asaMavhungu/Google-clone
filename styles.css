@@ -10,6 +10,7 @@ body{
     justify-content:end;
 
     font-family: arial,sans-serif;
+    width: 100vw;
 }
 
 
@@ -45,7 +46,8 @@ a:hover{
     flex-direction: row;
     justify-content: center;
     height: 30vh;
-    /*background-color: aqua;*/
+
+    
 }
 
 .logo > div{
