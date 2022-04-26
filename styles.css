@@ -48,7 +48,8 @@ a:hover{
     flex-direction: row;
     justify-content: center;
     height: 30vh;
-    /*background-color: aqua;*/
+
+    
 }
 
 .logo > div{
