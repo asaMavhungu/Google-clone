@@ -74,7 +74,7 @@ html body .forms form .queries .searchBar input[type=text] {
   font-size: 19px;
   background-color: inherit;
   color: antiquewhite;
-  width: 750px;
+  width: 550px;
   max-width: 80vw;
 }
 html body .forms form .queries .searchBar input[type=text]:focus {
