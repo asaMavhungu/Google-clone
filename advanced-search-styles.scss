@@ -1,0 +1,164 @@
+$outline: antiquewhite;
+$pageBackgroung:rgba(32,33,36,1);
+$buttonBackground: #303134;
+
+html{
+    background-color: $pageBackgroung;
+
+    body{
+        display: flex;
+        flex-direction: column;
+        background-color: inherit;
+        color: $outline;
+        justify-content:end;
+    
+        font-family: arial,sans-serif;
+        width: 100vw;
+        /*  Margin needs to be set from 8px default to 0
+            this is to make sure that viewport fuctions as expected.
+        */
+        margin: 0;
+
+        .headerBar{
+            display: flex;
+            flex-direction: row;
+            justify-content:right;
+            
+            height: 48px;
+            align-items: center;   
+
+            a{
+                color: $outline;
+                padding: 0px 15px;
+
+                &:link{
+                    text-decoration: none;
+                }
+
+                &:hover{
+                    text-decoration: underline;
+                }
+                
+            }
+
+        }
+
+        .centre{
+            padding: 60px 0px 5px 30px;
+            font-size: 25px;
+        
+            border-bottom: white 2px solid;
+            color: red;
+        }
+
+
+        .forms{
+            padding: 20px;
+            /*background-color: aqua;*/
+
+            form{
+                display: flex;
+                flex-grow: 1;
+
+
+                #adv_queries{
+                    padding: 5px 10px;
+                    display: flex;
+                    flex-grow: 1;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    background-color: inherit;
+
+
+                    div{
+                        padding: 5px;
+                        display: flex;
+                        align-self: stretch;
+                        flex-direction: row;
+
+                    }
+                    
+
+                    #adv_search_head{
+                        
+                        font-size: 20px;
+                        padding-bottom: 20px;
+                    }
+
+                    .queries-child {
+
+                        display: flex;
+                        align-self: stretch;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+
+
+                        div {
+
+                            width: 225px;
+                        }
+
+
+                        input{
+
+                            &[type="text"]{
+
+                                display: flex;
+                                flex-grow: 1;
+                                align-items: flex-start;
+                                background-color: inherit;
+              
+                                color: antiquewhite;
+                                font-size: 19px;
+                            
+                                border: aliceblue 1px solid;
+                                border-radius: 4px;
+                                padding: 5px 10px;
+
+                                max-width: 305px;
+                                min-width: 225px;
+                            
+                            }
+
+
+                        }
+
+                        
+                    }
+                    
+                    .button{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content:right;
+                        background-color: inherit;
+                        width: inherit;
+                        padding-top: 50px;
+
+                        input[type="submit"]{
+
+                            font-size:14px;
+                            margin: 11px 4px;
+                            padding: 0px 16px;
+                            height: 36px;
+                            border-radius: 4px;
+                            border: 0;
+                        
+                            color:antiquewhite;
+                        
+                            background-color: #303134;
+                        
+                            cursor:pointer;
+                            
+                        }
+
+                    }
+                
+                }
+
+            }
+
+        }
+
+    }
+    
+}

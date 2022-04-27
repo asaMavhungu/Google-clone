@@ -24,9 +24,7 @@ body{
     justify-content:right;
     
     height: 48px;
-    align-items: center;
-
-    
+    align-items: center;   
 }
 
 a{
@@ -68,15 +66,7 @@ a:hover{
 }
 
 
-/*
-.forms{
-    background-color: cornflowerblue;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    align-items: center;
-    height: 300px;
-}*/
+
 
 .forms{
     padding: 20px;
@@ -85,17 +75,21 @@ a:hover{
 
 .queries{
     display: flex;
+    flex-grow: 1;
 }
 
 .queries-child{
 
     display: flex;
+    flex-grow: 1;
+    width: 700px;
     flex-direction: row;
 
     padding: 5px 0px;
-    align-items: center;
+
+    
     flex-wrap: wrap;
-    flex-grow: 1;
+    background-color: rgb(6, 46, 46);
     
 }
 
@@ -105,8 +99,10 @@ a:hover{
 }
 
 .queries-child > div {
-    width: 225px;
-    flex-grow: 1;
+    display: flex;
+
+    min-width: 225px;
+    
     
 }
 
@@ -120,7 +116,9 @@ a:hover{
     border: aliceblue 1px solid;
     border-radius: 4px;
     padding: 5px 10px;
-    flex-grow: 1;
+
+    max-width: 500px;
+
 }
 
 form{
@@ -131,13 +129,13 @@ form{
 #adv_queries{
     padding: 5px 10px;
     display: flex;
+    flex-grow: 1;
     flex-direction: column;
     align-items: flex-start;
     background-color: inherit;
     background-color: red;
-    width: max-content;
     min-width: 500px;
-    flex-grow: 1;
+    
 
 
 }
@@ -204,12 +202,9 @@ input[type="submit"]:hover{
 }
 
 
-input[type="text"]
-{
+input[type="text"]{
     border-color: transparent;
     font-size: 19px;
-    max-width: 500px;
-    /*width: 75vw;*/
     background-color: inherit;
     color: antiquewhite;
     

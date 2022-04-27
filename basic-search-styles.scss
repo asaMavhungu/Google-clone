@@ -1,0 +1,135 @@
+$outline: antiquewhite;
+$pageBackgroung:rgba(32,33,36,1);
+$buttonBackground: #303134;
+
+html{
+    background-color: $pageBackgroung;
+    
+    body{
+        display: flex;
+        flex-direction: column;
+        background-color: inherit;
+        color: $outline;
+        justify-content:end;
+    
+        font-family: arial,sans-serif;
+        width: 100vw;
+        /*  Margin needs to be set from 8px default to 0
+            this is to make sure that viewport fuctions as expected.
+        */
+        margin: 0;
+
+        .headerBar{
+            display: flex;
+            flex-direction: row;
+            justify-content:right;
+            
+            height: 48px;
+            align-items: center;   
+
+            a{
+                color: $outline;
+                padding: 0px 15px;
+
+                &:link{
+                    text-decoration: none;
+                }
+
+                &:hover{
+                    text-decoration: underline;
+                }
+                
+            }
+
+        }
+
+
+        .logo{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            height: 30vh;
+        
+            div{
+                display: flex;
+                flex-direction: row;
+
+                align-items: flex-end;
+            }   
+
+        }
+
+        .forms{
+            padding: 20px;
+
+            form{
+                display: flex;
+                flex-grow: 1;
+                justify-content: center;
+
+                .queries{
+                    display: flex;
+                    flex-direction: column;
+
+                    .searchBar{
+
+                        padding: 10px 40px 5px 40px;
+                        margin-bottom: 5px;
+                        display: flex;
+                        
+                        border-radius:30px;
+                        height: 31px;
+                        
+                        align-self: center;
+                        outline: 2px solid $outline;
+
+
+                        input[type="text"]{
+                            border-color: transparent;
+                            font-size: 19px;
+                            background-color: inherit;
+                            color: $outline;
+                            width: 750px;
+                            max-width: 80vw;
+                        }
+                        
+                    }
+
+
+                    .buttons{
+                        display: flex;
+                        flex-direction: row;
+                        align-self: center;
+                        padding: 18px 10px 0px 10px;
+                    
+                        height: 58px;
+                        
+                        input[type="submit"]{
+
+                            font-size:14px;
+                            margin: 11px 4px;
+                            padding: 0px 16px;
+                            height: 36px;
+                            border-radius: 4px;
+                            border: 0;
+                        
+                            color:$outline;
+                        
+                            background-color: $buttonBackground;
+                        
+                            cursor:pointer;
+                            
+                        }
+                        
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
