@@ -83,6 +83,14 @@ html{
                         align-self: center;
                         outline: 2px solid $outline;
 
+                        &:hover{
+                            background-color: #303134;
+                        }
+                        
+                        &:focus-within{
+                            background-color: #303134;
+                        }
+
 
                         input[type="text"]{
                             border-color: transparent;
@@ -91,6 +99,12 @@ html{
                             color: $outline;
                             width: 750px;
                             max-width: 80vw;
+
+                            &:focus{
+                                background-color: #303134;
+                                outline: none;
+                            }
+                            
                         }
                         
                     }
@@ -118,6 +132,15 @@ html{
                             background-color: $buttonBackground;
                         
                             cursor:pointer;
+
+                            &:hover{
+                                outline: 1px solid antiquewhite;
+                            }
+
+                            &:focus{
+                                background-color: #303134;
+                                outline: none;
+                            }
                             
                         }
                         
