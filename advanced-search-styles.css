@@ -39,24 +39,23 @@ html body .centre {
 }
 html body .forms {
   padding: 20px;
-  /*background-color: aqua;*/
 }
 html body .forms form {
   display: flex;
-  flex-grow: 1;
+  /*flex-grow: 1;*/
 }
 html body .forms form #adv_queries {
   padding: 5px 10px;
   display: flex;
-  flex-grow: 1;
+  /*flex-grow: 1;*/
   flex-direction: column;
   align-items: flex-start;
   background-color: inherit;
+  flex-wrap: wrap;
 }
 html body .forms form #adv_queries div {
   padding: 5px;
   display: flex;
-  align-self: stretch;
   flex-direction: row;
 }
 html body .forms form #adv_queries #adv_search_head {
@@ -65,16 +64,25 @@ html body .forms form #adv_queries #adv_search_head {
 }
 html body .forms form #adv_queries .queries-child {
   display: flex;
-  align-self: stretch;
+  align-self: flex-start;
   flex-direction: row;
   flex-wrap: wrap;
+  width: 80vw;
+  flex: 1;
 }
 html body .forms form #adv_queries .queries-child div {
   width: 225px;
 }
-html body .forms form #adv_queries .queries-child input[type=text] {
+html body .forms form #adv_queries .queries-child .filler {
+  width: 500px;
+}
+html body .forms form #adv_queries .queries-child .inputDiv {
   display: flex;
-  flex-grow: 1;
+  flex: 1;
+}
+html body .forms form #adv_queries .queries-child .inputDiv input[type=text] {
+  display: flex;
+  flex: 1;
   align-items: flex-start;
   background-color: inherit;
   color: antiquewhite;
@@ -82,24 +90,34 @@ html body .forms form #adv_queries .queries-child input[type=text] {
   border: aliceblue 1px solid;
   border-radius: 4px;
   padding: 5px 10px;
-  max-width: 305px;
-  min-width: 225px;
+  max-width: 600px;
+  min-width: 500px;
 }
 html body .forms form #adv_queries .button {
   display: flex;
   flex-direction: row;
-  justify-content: right;
+  justify-content: space-between;
   background-color: inherit;
   width: inherit;
   padding-top: 50px;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+html body .forms form #adv_queries .button div {
+  width: 250px;
 }
 html body .forms form #adv_queries .button input[type=submit] {
+  align-self: stretch;
   font-size: 14px;
   margin: 11px 4px;
   padding: 0px 16px;
   height: 36px;
   border-radius: 4px;
   border: 0;
+  align-self: flex-start;
   color: antiquewhite;
   background-color: #303134;
   cursor: pointer;
