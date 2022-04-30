@@ -42,12 +42,10 @@ html body .forms {
 }
 html body .forms form {
   display: flex;
-  /*flex-grow: 1;*/
 }
 html body .forms form #adv_queries {
   padding: 5px 10px;
   display: flex;
-  /*flex-grow: 1;*/
   flex-direction: column;
   align-items: flex-start;
   background-color: inherit;
