@@ -89,7 +89,6 @@ html body .forms form #adv_queries .queries-child .inputDiv input[type=text] {
   border-radius: 4px;
   padding: 5px 10px;
   max-width: 600px;
-  min-width: 500px;
 }
 html body .forms form #adv_queries .button {
   display: flex;
